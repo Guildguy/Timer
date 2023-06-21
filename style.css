@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+:root {
+    --base-color: 000;
+    --radius-bg-color: rgba(66, 211, 255, 0.13);
+    --primary-color: hsl(0, 95%, 35%);;
+
+    --txt-color: #ffffff;
+
+    font-size: 62.5%;
+}
+
+.start svg path,
+.pause svg path,
+.set svg path,
+.stop svg path,
+.soundOn svg path,
+.soundOff svg path {
+ fill: var(--primary-color)
+}
+
+body {
+background: linear-gradient(to left, black ,hsl(0, 95%, 35%));
+color: var(--primary-color);
+
+font-family: 'Roboto', sans-serif;
+
+display: grid;
+min-height: 100vh;
+}
+
+main {
+    align-self: end;
+    justify-self: center;
+}
+
+button{
+    background: transparent;
+    border: none;
+
+    cursor: pointer;
+}
+
+button svg {
+    width: clamp(3.2rem, 2.2rem + 12vw, 6.4rem);
+}
+
+.hide {
+    display: none;
+}
+
+
+#timer {
+    font-size: clamp(4rem, 4rem + 10vw, 8.8rem);
+    font-weight: 550;
+
+    display: flex;
+
+    justify-content: center;
+    
+    margin-bottom: 1.6rem;
+
+    color: #7a5252;
+}
+
+.controlsConfig {
+    background-color: var(--radius-bg-color);
+    
+    
+    width: clamp(10rem, 10rem + 30vw, 22.8rem);
+    height: clamp(8rem,5rem + 10vw, 10.8rem);
+    margin: auto;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3.2rem;
+
+    border-radius: 9999px;
+}
+
+footer {
+   align-self: end;
+   justify-self: end;
+   
+   padding: 0 4rem 3.2rem 0;
+}
